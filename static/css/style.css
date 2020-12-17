@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    font-family:'PT Sans', sans-serif;
+}
+
+
+#header-title {
+    text-align: center;
+    font-size: 60pt;
+    font-family: 'Fredoka One', cursive;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 15pt;
+}
+
+#items {
+    margin: 10px;
+    text-align: center;
+}
+
+#add-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color:rgb(102, 228, 102);
+    border-style: none;
+    margin-left: 10px;
+    text-decoration:none;
+    font-size: 15pt;
+    border-radius: 7px;
+    padding:5px;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(164, 236, 55);
+}
+
+.delete-button {
+    background-color:rgb(224, 24, 24);
+    text-decoration: none;
+    font-size: 15pt;
+    border-style: none;
+    margin-left: 10px;
+    border-radius: 7px;
+    padding:5px;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: rgb(226, 72, 72);
+}
+
+.update-button {
+    background-color:blueviolet;
+    text-decoration:none;
+    border-radius:7px;
+    padding:5px;
+    color: white;
+}
+
+#completed {
+    color:rgb(78, 102, 207);
+}
+
+#not-completed {
+    color:crimson;
+}

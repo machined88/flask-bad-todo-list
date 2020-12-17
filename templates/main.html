@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    
+    <title>To-Do List - Flask</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1 id="header-title">TO-DO LIST</h1>
+        </header>
+
+        {% for x in todo_list %}
+        <div id="items">
+            <ul>
+                <li>
+                    <input type="checkbox" name="check"> {{ x.id }} - {{ x.title }} <a href="/delete/{{ x.id }}" class="delete-button">Delete</a> <a href="/update/{{ x.id }}" class="update-button">Change status</a>
+                </li>
+            </ul>
+            {% if x.complete == False %}
+                <span id="not-completed">Not completed.</span>
+            {% elif x.complete == True %}
+                <span id="completed">Completed.<span>
+        {% endif %}
+        </div>
+        
+        {% endfor %}
+        
+        <form method="POST" action="/add">
+            <div id='add-item'>
+                <span>
+                    <input type="text" name="title" placeholder="Enter something to do..."><button type="Submit" class="button">Add</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
