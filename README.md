@@ -1,2 +1,2 @@
-# flask-bad-todo-list
+# Flask Bad To-do List
 A to-do list made with Flask
