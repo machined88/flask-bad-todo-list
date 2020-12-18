@@ -5,5 +5,5 @@ This is a simple to-do app made with Python and HTML/CSS. I wanted to make this 
 
 # Setup
 
-- You can install all necessary librairies by running `pip install -r requirements.txt` on your terminal.
 - To launch the application, set the location of the app (ex:`Set-Location -Path "C:/Users/X/Documents/flask-bad-todo-list"` on Powershell) and run the command `python main.py`.
+- You can install all necessary librairies by running `pip install -r requirements.txt` on your terminal.
